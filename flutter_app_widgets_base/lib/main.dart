@@ -57,6 +57,19 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             const Text('hello world'),
                   Text("2eme hello "),
+            Container(
+              margin: EdgeInsets.all(20),
+              padding: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+              color: Colors.green,
+              borderRadius: BorderRadius.circular(24),
+            ),
+            child: Text(
+              'Boîte stylisée avec Container',
+              style: TextStyle(color: Colors.white, fontSize: 18),
+            ),
+          ),
+          const Text("Quebec"),
           ],
         ),
       ),
