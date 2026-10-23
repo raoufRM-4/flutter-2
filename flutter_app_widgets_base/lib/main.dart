@@ -53,16 +53,16 @@ class _MyHomePageState extends State<MyHomePage> {
      
         child: Column(
       
-          mainAxisAlignment: .center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const Text('hello world'),
                   Text("2eme hello "),
             Container(
-              margin: EdgeInsets.all(20),
+              margin: EdgeInsets.all(26),
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
-              color: Colors.green,
-              borderRadius: BorderRadius.circular(24),
+              color: Colors.yellow,
+              borderRadius: BorderRadius.circular(28),
             ),
             child: Text(
               'Boîte stylisée avec Container',
@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           const Text("Quebec"),
           Stack(
-            alignment: Alignment.topRight,
+            alignment: Alignment.center,
             children: [
               Container(width: 200, height: 200, color: Colors.blue[100]),
               Icon(Icons.star, size: 100, color: Colors.amber),
@@ -82,8 +82,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Icon(Icons.home, color: Colors.blue, size: 40),
                 Icon(Icons.star, color: Colors.amber, size: 40),
@@ -92,8 +92,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('Titre principal', style: TextStyle(fontSize: 30)),
                 SizedBox(height: 20),
